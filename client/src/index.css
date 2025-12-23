@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1b1f;
+  --color-secondary: #2c2f36;
+  --color-tertiary: #3d3f47;
+  --color-accent: #ff007a;
+  --color-accent-hover: #ff3394;
+  --color-success: #27ae60;
+  --color-error: #ff6871;
+  --color-warning: #ff8f00;
+  --color-border: #40444f;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: #fff;
+  min-height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--color-border);
+}
+
+.input-field {
+  background-color: var(--color-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  outline: none;
+  width: 100%;
+}
+
+.input-field:focus {
+  ring: 2px;
+  ring-color: var(--color-accent);
+}
+
+.input-field::placeholder {
+  color: #9ca3af;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.15s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-accent-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: var(--color-tertiary);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.15s;
+}
+
+.tab-active {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.tab-inactive {
+  color: #9ca3af;
+}
+
+.tab-inactive:hover {
+  color: #fff;
+  background-color: var(--color-tertiary);
+}

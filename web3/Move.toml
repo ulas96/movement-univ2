@@ -1,0 +1,18 @@
+[package]
+name = "UniswapV2AMM"
+version = "1.0.0"
+authors = [""]
+
+[addresses]
+uniswap_v2 = "0x32cdff416b24750f3465e78150aa97c7bbfc2fb1456501e1f9878b9c2a795bde"
+
+[dev-addresses]
+uniswap_v2 = "0xbeef"
+
+[dependencies.AptosFramework]
+git = "https://github.com/movementlabsxyz/aptos-core.git"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
+
+
+[dev-dependencies]
